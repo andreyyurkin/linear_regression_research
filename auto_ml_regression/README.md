@@ -54,7 +54,7 @@ CatBoost классификатор для предсказания сегмен
 ## Установка
 
 ```bash
-git clone https://github.com/yourusername/auto_ml_regression.git
+git clone https://github.com/andreyyurkin/linear_regression_research.git
 cd auto_ml_regression
 pip install -e .
 ```
