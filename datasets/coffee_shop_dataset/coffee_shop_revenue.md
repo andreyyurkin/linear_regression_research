@@ -1,4 +1,7 @@
 # About Dataset
+
+Coffee Shop Daily Revenue Prediction Dataset - https://www.kaggle.com/datasets/himelsarder/coffee-shop-daily-revenue-prediction-dataset 
+
 ## Dataset Overview
 
 This dataset contains 2,000 rows of data from coffee shops, offering detailed insights into factors that influence daily revenue. It includes key operational and environmental variables that provide a comprehensive view of how business activities and external conditions affect sales performance. Designed for use in predictive analytics and business optimization, this dataset is a valuable resource for anyone looking to understand the relationship between customer behavior, operational decisions, and revenue generation in the food and beverage industry.
