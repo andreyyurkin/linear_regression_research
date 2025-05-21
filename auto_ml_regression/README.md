@@ -83,7 +83,7 @@ pipeline = AutoMLPipeline(
 
 # Запуск полного пайплайна
 pipeline.preprocess_data(data)
-pipeline.segment_data(use_optuna=True, n_trials=30)
+pipeline.segment_data(use_optuna=True, n_trials=30)   # or segment_data_kmeans, or segment_data_gmm
 pipeline.train_classifier(n_trials=50)
 pipeline.train_regressors(model_type='huber', n_trials=50, cv=4)
 
@@ -114,7 +114,7 @@ predictions = pipeline.regressor.predict(
 
 ## Метрики качества
 
-Библиотека автоматически вычисляет и возвращает в виде DataFrame:
+Библиотека автоматически вычисляет и возвращает в виде DataFrame на тестовых данных:
 - R² (коэффициент детерминации)
 - MSE (среднеквадратичная ошибка)
 - RMSE (корень из MSE)
@@ -122,7 +122,6 @@ predictions = pipeline.regressor.predict(
 - MAPE (средняя абсолютная процентная ошибка)
 
 ## Доступные модели
-
 Через метод `get_models()` можно получить:
 1. Модель CatBoost для сегментации
 2. Модель KMeans для кластеризации листьев
